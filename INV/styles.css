@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.invoice-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: white;
+  border-style: outset;
+  border-radius: 15px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* Left Column */
+.left-column {
+  background-color: rgb(250, 247, 243);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.company-info img,
+.user-profile img,
+.client-details img,
+.profile img,
+.logo img {
+  border-radius: 50%;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 15px;
+  color: #070606;
+  border: 1px rgb(250, 247, 243);
+  background-color: rgb(250, 247, 243);
+  font-size: small;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(184, 248, 8);
+  color: black;
+  border-radius: 20px;
+  border-style: dotted;
+}
+
+/* Center Column */
+.center-column {
+  flex: 1;
+  margin: 10px;
+}
+
+.address-box,
+.address-box1 {
+  background-color: rgb(6, 2, 39);
+  color: white;
+  border-radius: 9px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.address-box1 {
+  background-color: rgb(250, 247, 243);
+  color: rgb(7, 6, 6);
+}
+
+/* Table Styles */
+.item-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.item-details-table th,
+.item-details-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.item-details-table th {
+  background-color: rgb(197, 197, 195);
+}
+
+.item-details-table td {
+  text-align: right;
+}
+
+/* Right Column */
+.right-column {
+  background-color: rgb(250, 248, 248);
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.client-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.profile-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.word {
+  word-spacing: 3px;
+}
+
+.add-customer-button {
+  margin-top: 20px;
+  background-color: rgb(208, 247, 225);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: small;
+  color: #079b38;
+  cursor: pointer;
+}
+
+.basic-info {
+  background-color: rgb(250, 248, 248);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+input[type="date"] {
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.send,
+.preview,
+.download {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.send {
+  background-color: rgb(184, 248, 8);
+  color: black;
+}
+
+.pre-down {
+  display: flex;
+  gap: 10px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .invoice-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left-column,
+  .right-column,
+  .center-column {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .address-box,
+  .address-box1 {
+    margin-bottom: 10px;
+  }
+
+  .item-details-table th,
+  .item-details-table td {
+    padding: 5px;
+  }
+}
